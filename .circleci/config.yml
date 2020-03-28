@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:14-jdk-buster
+
+    working_directory: ~/overgrowth-backend
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - overgrowth-backend-{{ checksum "pom.xml" }}
+
+      - run: mvn dependency:go-offline
+
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: overgrowth-backend-{{ checksum "pom.xml" }}
+
+      - run: mvn clean test

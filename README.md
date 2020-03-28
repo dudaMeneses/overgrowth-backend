@@ -1,11 +1,14 @@
+[![CircleCI](https://circleci.com/gh/dudaMeneses/overgrowth-backend.svg?style=shield)](https://circleci.com/gh/dudaMeneses/overgrowth-backend/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/dudameneses/overgrowth-backend/badge)](https://www.codefactor.io/repository/github/dudameneses/overgrowth-backend)
+
 # Overgrowth
 Application to support recommend training and support its progression.
 
 ## Pre-requirements
-- Java 14
-- Maven
-- Docker
-- Make
+- [jdk14](https://jdk.java.net/14/)
+- [maven](https://maven.apache.org/download.cgi)
+- [docker-compose](https://docs.docker.com/compose/install/)
+- [make](http://gnuwin32.sourceforge.net/packages/make.htm) (for Windows)
 
 ## How to
 ### Run
