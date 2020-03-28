@@ -19,6 +19,8 @@ Application to support recommend training and support its progression.
 - Test and generate report: `make test`
 - SonarQube report: `make sonar`
 
+>Important to remember that SonarQube step will work only if docker-run is running before
+
 ## Tech Stack
 - Java 14
 - Spring-Boot (webflux and mongodb)
