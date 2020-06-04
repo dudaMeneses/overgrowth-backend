@@ -1,4 +1,4 @@
-package com.overgrowth.trainbackend;
+package com.overgrowth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
