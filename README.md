@@ -11,6 +11,13 @@ Application to support recommend training and support its progression.
 - [make](http://gnuwin32.sourceforge.net/packages/make.htm) (for Windows)
 
 ## How to
+
+### Configure
+- Add environment variable to runner, docker or even local machine:
+```
+MONGODB_URI=?
+```
+
 ### Run
 - Local: `make local-run`
 - Docker: `make docker-run`
