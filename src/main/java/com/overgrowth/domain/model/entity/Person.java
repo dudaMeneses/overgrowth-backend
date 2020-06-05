@@ -48,6 +48,9 @@ public class Person {
     }
 
     private static Integer getAge(LocalDate birthDate) {
-        return Period.between(birthDate, LocalDate.now()).getYears();
+        if(birthDate != null)
+            return Period.between(birthDate, LocalDate.now()).getYears();
+
+        return null;
     }
 }

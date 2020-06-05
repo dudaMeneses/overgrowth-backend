@@ -6,6 +6,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 public class DocumentNotFound extends ResponseStatusException{
     public DocumentNotFound(Entity entity, String id) {
-        super(HttpStatus.BAD_REQUEST, String.format("%s not found for id '%s'", entity.name(), id));
+        super(HttpStatus.NOT_FOUND, String.format("%s not found for id '%s'", entity.name(), id));
     }
 }
