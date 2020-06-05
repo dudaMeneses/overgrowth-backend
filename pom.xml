@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>14</java.version>
+		<springfox.version>3.0.0-SNAPSHOT</springfox.version>
 	</properties>
 
 	<dependencies>
@@ -38,17 +39,17 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>${springfox.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>${springfox.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-spring-webflux</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>${springfox.version}</version>
 		</dependency>
 
 		<dependency>
