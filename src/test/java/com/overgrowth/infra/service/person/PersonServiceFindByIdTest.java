@@ -28,7 +28,7 @@ class PersonServiceFindByIdTest {
     @Test
     public void whenFindUser_thenReturnUser(){
         var person = new Person().withId("id-test").withName("test name");
-        var response = PersonResponse.builder().name("test name").build();
+        var response = PersonResponse.builder().id("id-test").name("test name").build();
 
         doReturn(Mono.just(person)).when(repository).findById(anyString());
 
