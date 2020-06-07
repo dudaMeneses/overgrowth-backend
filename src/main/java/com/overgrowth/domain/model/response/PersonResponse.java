@@ -12,11 +12,12 @@ import java.time.LocalDate;
 @ToString
 @EqualsAndHashCode
 public class PersonResponse {
-    private String name;
-    private String email;
-    private LocalDate birthDate;
-    private Integer age;
-    private Integer weight;
-    private Integer height;
-    private String imageUrl;
+    private final String id;
+    private final String name;
+    private final String email;
+    private final LocalDate birthDate;
+    private final Integer age;
+    private final Integer weight;
+    private final Integer height;
+    private final String imageUrl;
 }

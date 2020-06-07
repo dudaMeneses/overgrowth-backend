@@ -37,6 +37,7 @@ public class Person {
 
     public static PersonResponse toResponse(Person person) {
         return PersonResponse.builder()
+                .id(person.getId())
                 .name(person.getName())
                 .email(person.getEmail())
                 .birthDate(person.getBirthDate())
