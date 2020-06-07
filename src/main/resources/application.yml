@@ -8,4 +8,4 @@ logging:
     root: INFO
     org:
       springframework.web: ERROR
-    com.overgrowth: ${LOG_LEVEL}
+    com.overgrowth: ${LOG_LEVEL:INFO}
