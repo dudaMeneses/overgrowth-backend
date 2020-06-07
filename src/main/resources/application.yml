@@ -2,3 +2,10 @@ spring:
   data:
     mongodb:
       uri: ${MONGODB_URI}
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework.web: ERROR
+    com.overgrowth: ${LOG_LEVEL}
