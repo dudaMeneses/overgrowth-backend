@@ -4,10 +4,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.Value;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
+import javax.validation.constraints.*;
 import java.time.LocalDate;
 
 @Value
@@ -18,16 +15,19 @@ public class PersonRequest {
     @NotBlank(message = "name is required")
     String name;
 
-    @Email
+    @Email(message = "email is invalid")
     @NotBlank(message = "email is required")
     String email;
 
     @Past(message = "birthDate must be a past date")
-    @NotNull(message = "birthDate is required")
     LocalDate birthDate;
 
+    @Positive
     Integer weight;
+
+    @Positive
     Integer height;
+
     String imageUrl;
 
 }
